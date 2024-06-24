@@ -199,31 +199,33 @@ public class Qes1_13 {
 		//初めまして鈴木一郎です
 		System.out.println("初めまして" + numString1 + "です。");
 		//　年齢は48歳です
-		numInt = numInt *= 2;
-		System.out.println("年齢は" + numInt + "歳です。");
+		int ageInt2 = numInt * 2;
+		System.out.println("年齢は" + ageInt2 + "歳です。");
 		
 		//　身長337.0cmです
-		height = height *= 2;
+		height *= 2;
 		System.out.println("身長は" + height + "ｃｍです。");
 		
 		//　体重は128.4kgです
-		weight = weight *= 2;
+		weight *= 2;
 		System.out.println("体重は" + weight + "ｋｇです。");
 		
 		//　好きな食べ物はオムライスです
 		System.out.println("好きな食べ物は" + numString2 + "です。");
 		//　BMIは11.31です
-		bmi = bmi /= 2;
+		bmi /= 2;
 	    System.out.println(String.format("BMIは%.1fです。",bmi));
 		
 	    //10.8で使用した年齢が25歳以上ならtrueが出力する
-	    numInt= 24;
-	    System.out.println(numInt>=25);
+	    int decisionInt = numInt;
+
+	    System.out.println(decisionInt>=25);
 	    
 	    //11.8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
 	    //文字列型に型変換する
-	    numInt= 24;
-        String str = String.valueOf(numInt);
+	    int ageInt = numInt;
+	    
+        String str = String.valueOf(ageInt);
         height= 168.5;
         String str2 = String.valueOf(height);
         weight= 64.2;
