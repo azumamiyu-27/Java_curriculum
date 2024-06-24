@@ -54,6 +54,7 @@ public class Qes1_13 {
 		
 		//文字列型
 		numString = "0";
+		
 		 
 		//ブーリアン型 初期化
 		numBoolean = true;
