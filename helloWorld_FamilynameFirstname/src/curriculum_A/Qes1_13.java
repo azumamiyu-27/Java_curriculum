@@ -41,23 +41,23 @@ public class Qes1_13 {
 		numInt =0;
 		
 		//長整数型
-		numLong =0;
+		numLong =0L;
 		
 		////単精度浮動小数点数型
-		numFloat = 0; 
+		numFloat = 0.0f; 
 		
 		//倍精度浮動小数点数型
-		numDouble = 0;
+		numDouble = 0.0;
 		
 		//文字型
-		numChar = 0;
+		numChar = '\u0000';
 		
 		//文字列型
-		numString = "0";
+		numString = null;
 		
 		 
 		//ブーリアン型 初期化
-		numBoolean = true;
+		numBoolean = false;
 		 
 		 //3.
 		// バイト型 10
@@ -199,8 +199,8 @@ public class Qes1_13 {
 		//初めまして鈴木一郎です
 		System.out.println("初めまして" + numString1 + "です。");
 		//　年齢は48歳です
-		int ageInt2 = numInt * 2;
-		System.out.println("年齢は" + ageInt2 + "歳です。");
+		 numInt *= 2;
+		System.out.println("年齢は" + numInt + "歳です。");
 		
 		//　身長337.0cmです
 		height *= 2;
@@ -217,9 +217,9 @@ public class Qes1_13 {
 	    System.out.println(String.format("BMIは%.1fです。",bmi));
 		
 	    //10.8で使用した年齢が25歳以上ならtrueが出力する
-	    int decisionInt = numInt;
+	    numInt= 24;
 
-	    System.out.println(decisionInt>=25);
+	    System.out.println( numInt >=25);
 	    
 	    //11.8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
 	    //文字列型に型変換する
